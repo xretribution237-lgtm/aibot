@@ -32,7 +32,7 @@ async function askLlama(history) {
   prompt += `<|start_header_id|>assistant<|end_header_id|>\n`;
 
   const response = await fetch(
-    `https://api-inference.huggingface.co/models/${HF_MODEL}`,
+    `https://router.huggingface.co/hf-inference/models/${HF_MODEL}`,
     {
       method: 'POST',
       headers: {
